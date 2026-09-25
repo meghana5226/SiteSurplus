@@ -1,10 +1,15 @@
-# 🏗️ ConstructionWaste Exchange
+#  Construction Material Exchange
 
 > Match surplus construction material between sites — AI-assisted material identification, a transparent weighted matching engine, real logistics estimation, and a full transaction lifecycle through to reuse confirmation.
 
 A full-stack marketplace that connects construction sites with surplus material (tiles, bricks, plywood, metal scrap...) to sites that need it — reducing landfill waste and material costs on both sides.
 
 ![Python](https://img.shields.io/badge/Python-FastAPI-009688) ![React](https://img.shields.io/badge/React-18-61DAFB) ![Postgres](https://img.shields.io/badge/Postgres-16-336791) ![Docker](https://img.shields.io/badge/Docker-Compose-2496ED) ![License](https://img.shields.io/badge/license-MIT-lightgrey)
+
+## LIVE LINKS
+**Vercel** - https://site-surplus.vercel.app/
+
+**Render** - https://construction-waste-exchange-api.onrender.com/
 
 ---
 
@@ -34,7 +39,7 @@ More in [`screenshots/`](screenshots/).
 
 ## 💡 About This Project
 
-Construction sites routinely have surplus material (leftover tiles, bricks, plywood) that gets thrown away, while other nearby sites are buying the same material new. **ConstructionWaste Exchange** closes that loop:
+Construction sites routinely have surplus material (leftover tiles, bricks, plywood) that gets thrown away, while other nearby sites are buying the same material new. **Construction Material Exchange** closes that loop:
 
 1. A **supplier** site lists surplus material — optionally uploading a photo that an AI heuristic analyzes to suggest the material type (shown as a *suggestion the user confirms*, never written automatically)
 2. A **requester** site posts what they need
