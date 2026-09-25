@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: construction-waste-exchange-api
+    runtime: python
+    plan: free
+    rootDir: backend
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python -m app.seed && uvicorn app.main:app --host 0.0.0.0 --port $PORT"
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: construction-waste-exchange-db
+          property: connectionString
+      - key: CORS_ORIGINS
+        value: "https://your-app.vercel.app,http://localhost:5173"
+      - key: PYTHON_VERSION
+        value: "3.12.0"
+
+databases:
+  - name: construction-waste-exchange-db
+    plan: free
